@@ -1,140 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulários</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Quer saber quando ela lançar algo novo?</h1>
-    <h3>Inscreva-se no nosso Newsletter e receba atualizações por e-mail!</h3>
-    <form method="get" action="envio_dados.php">
-    <input type="text" name="nome" placeholder="Digite seu Nome aqui">
-    <input type="e-mail" name="email" placeholder="Digite seu e-mail">
-    <input type="submit" name="enviar" value="Enviar">    
-</form>
-<br/><br/>
-<form>
-    <input type="checkbox" name="veiculo3" value="moto">Born To Die</form>
-    <input type="checkbox" name="veiculo1" value="bici">Ultraviolence<br>
-    <input type="checkbox" name="veiculo2" value="carro">Honeymoon<br>
-    <input type="checkbox" name="veiculo3" value="moto">Lust For Life</form>
-    <input type="checkbox" name="veiculo3" value="moto">Norman Fucking Rockwell!</form>
-    <input type="checkbox" name="veiculo3" value="moto">Chemtrails Over The Country Club</form>
-    <input type="checkbox" name="veiculo3" value="moto">Did You Know That There's A Tunnel Under Oceon Blvd?</form>
-<br/><br/>
-<form>
-    Data de nascimento: <input type="date" name="nascimento">
-</form>
-<br/><br/>
-<form>
-    <input type="file" name="arquivos" multiple>
-</form>
-<br><br>
- <input type="hidden" id="inputOculto" name="inputOculto" value="meuvalor">
-<br><br>
-<form action="/action_page.php">
-  First name: <input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br>
-  <input type="image" src="seta.png" alt="Submit" width="48" height="48">
-</form>
-<br><br>
-<form>
-    Mês e ano: <input type="month" name="mesano">
-</form>
-<br><br>
-<form>
-    Quantidade (entre 1 e 5): <input type="number" name="quantidade" min="1" max="5">    
-</form>
-<br><br>
-<form>
-    <input type="password" name="senha" placeholder="Digite sua Senha">
-</form>
-<br><br>
-<form>
-    <p>Qual sua idade?</p>
-    <input type="radio" name="idade" value="18_22">18 a 22 <br>
-    <input type="radio" name="idade" value="23_30">23 a 30 <br>
-    <input type="radio" name="idade" value="mais31">acima de 31<br>
-</form>
-<br><br>
-<form>
-    Defina seu nível de satisfação:<br>
-    pouco satisfeito
-    <input type="range" name="satisfacao" min="0" max="10">
-    muito satisfeito
-</form>
-<br><br>
-<form>
-    <input type="reset">
-</form>
-<br><br>
-<form>
-    Pesquisar: <input type="search" name="q">
-</form>
-<br><br>
-<form>
-    <input type="submit" value="Enviar Formulário">
-</form>
-<br><br>
-<form>
-    Telefone: <input type="tel" name="usertel">
-</form>
-<br><br>
-<form>
-    Nome: <input type="text" name="nome"><br>
-    Sobrenome: <input type="text" name="sobrenome"><br>
-    Endereço: <input type="text" name="endereco">
-</form>
-<br><br>
-Escolha o horário: <input type="time" name="usr_horario">
-<br><br>
-<form>
-    Link do seu WebSite: <input type="url" name="webpage">
-</form>
-<br><br>
-<form>
-    Selecione uma semana: <input type="week" name="semana">
-</form>
-<br><br>
-<form>
-    <textarea></textarea>
-    <textarea>Area de texto com um texto inicial dentro</textarea>
-    <br><br>
-</form>
-    <form class="formulario" method="post">
-        <p> Envie uma mensagem preenchendo o formulário abaixo</p>
-       
-        <div class="field">
-            <label for="nome">Seu Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
-        </div>
-        <div class="field">
-            <label for="telefone">Seu Telefone:</label>
-            <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
-        </div>
-        <div class="field">
-            <label for="email">Seu E-Mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
-        </div>        
-        <div class="field radiobox">
-            <span>Deseja receber nossas novidades?</span>
-            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
-            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
-        </div>
-        <div class="field">
-            <label for="mensagem">Sua mensagem:</label>
-            <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
-        </div>
-        <input type="submit" name="acao" value="Enviar">
-    </form>
-    <section>
-        <a href="index.html">Sobre</a>
-        <a href="musicas.html">Músicas</a>
-        <a href="https://instagram.com/brayanbmunhoz">Brayan Munhoz</a>
-    </section>
+    <header>
+        <h1 class="titulo">Quer saber quando ela lançar algo novo?</h1>
+        <h2 class="subtitulo">Inscreva-se no nosso Newsletter e receba atualizações por e-mail</h2>
+    </header>
+        <form>
+            <label for="">Primeiro Nome: </label><input type="text" name="fname"><br>
+            Último Nome: <input type="text" name="lname"><br>
+            E-mail<input type="e-mail" name="email">
+            <br>
+            <p>Qual sua idade?</p>
+            <input type="radio" name="idade" value="menos_18">menos de 18<br>
+            <input type="radio" name="idade" value="18_24">entre 18 e 24<br>
+            <input type="radio" name="idade" value="25_31">entre 25 e 31<br>
+            <input type="radio" name="idade" value="acima_31">entre 25 e 31<br>
+            <br>
+            <p>Quais seus álbuns favoritos da Lana?</p>
+            <input type="checkbox" name="veiculo3" value="moto">Born To Die<br>
+            <input type="checkbox" name="veiculo1" value="bici">Ultraviolence<br>
+            <input type="checkbox" name="veiculo2" value="carro">Honeymoon<br>
+            <input type="checkbox" name="veiculo3" value="moto">Lust For Life<br>
+            <input type="checkbox" name="veiculo3" value="moto">Norman Fucking Rockwell!<br>
+            <input type="checkbox" name="veiculo3" value="moto">Chemtrails Over The Country Club<br>
+            <input type="checkbox" name="veiculo3" value="moto">Did You Know That There's A Tunnel Under Oceon Blvd?
+            <br>
+            <imput type="submit">Enviar</imput>
+        </form>
+        <br>
+        <footer>
+            <a href="index.html">Sobre</a>
+            <a href="musicas.html">Músicas</a>
+            <a href="https://instagram.com/brayanbmunhoz">Brayan Munhoz</a>
+        </footer>
 </body>
 </html>
-
